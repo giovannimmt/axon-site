@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import { NodeField } from "@/components/visuals/NodeField";
+import { StarField } from "@/components/visuals/StarField";
 import { hero } from "@/content/site";
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-40 pb-28 md:pt-48 md:pb-36">
-      <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
+      <StarField className="pointer-events-none absolute inset-0 h-full w-full" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
