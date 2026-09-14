@@ -177,14 +177,19 @@ export type ConceptualOrg = { name: string; sector: string };
 
 export const trustedBy = {
   title: "Built for organizations that refuse to stand still.",
-  note: "Selected conceptual partnerships — illustrative, not real client engagements.",
+  eyebrow: "SELECTED CONCEPTUAL PARTNERSHIPS",
+  note: "Illustrative, not real client engagements.",
   organizations: [
     { name: "NOVA", sector: "Technology" },
     { name: "VERTEX", sector: "Financial" },
     { name: "NORTH", sector: "Logistics" },
     { name: "ORBIT", sector: "Sports" },
+    { name: "FURACÃO FC", sector: "Football" },
     { name: "LUMEN", sector: "Health" },
     { name: "MOTION", sector: "Commerce" },
+    { name: "QUANTA", sector: "Manufacturing" },
+    { name: "ECHO", sector: "Media" },
+    { name: "CRUX", sector: "Energy" },
   ] satisfies ConceptualOrg[],
 };
 
