@@ -1,3 +1,4 @@
+import { SiteBackground } from "@/components/visuals/SiteBackground";
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { Hub } from "@/components/sections/Hub";
@@ -15,6 +16,7 @@ import { Footer } from "@/components/sections/Footer";
 export default function Home() {
   return (
     <>
+      <SiteBackground />
       <Navbar />
       <main>
         <Hero />

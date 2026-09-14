@@ -3,7 +3,7 @@ import { future } from "@/content/site";
 
 export function Future() {
   return (
-    <section className="border-t border-border bg-background py-32">
+    <section className="border-t border-border py-32">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <Reveal>
           <h2 className="text-3xl leading-tight font-semibold tracking-tight md:text-5xl">
