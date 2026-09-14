@@ -1,5 +1,7 @@
 # AXON — Technology & Intelligence Hub
 
+**Site publicado:** [axon-site-theta.vercel.app](https://axon-site-theta.vercel.app/)
+
 Landing page institucional/portfólio conceitual da AXON. Site estático (sem backend,
 sem banco de dados), construído com Next.js 15 (App Router), TypeScript, Tailwind CSS
 e Framer Motion.
