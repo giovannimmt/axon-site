@@ -6,13 +6,10 @@ const SHAPES: Record<string, () => React.ReactNode> = {
   NORTH: () => <path d="M10 2V18M4 8L10 2L16 8" stroke="currentColor" strokeWidth="1.4" fill="none" />,
   ORBIT: () => <ellipse cx="10" cy="10" rx="9" ry="4" stroke="currentColor" strokeWidth="1.4" fill="none" />,
   "FURACÃO FC": () => (
-    <path
-      d="M4 6C7 4 13 4 16 6C13 7.5 7 7.5 4 9C7 10.5 13 10.5 16 12C13 14 7 14 4 12"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      fill="none"
-      strokeLinecap="round"
-    />
+    <g stroke="currentColor" strokeWidth="1.3" fill="none" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 3H16V9.5C16 13.5 13 16.5 10 18C7 16.5 4 13.5 4 9.5V3Z" />
+      <path d="M8 6.5H12.5M8 6.5V14M8 10H11.5" />
+    </g>
   ),
   LUMEN: () => <circle cx="10" cy="10" r="6" stroke="currentColor" strokeWidth="1.4" fill="none" />,
   MOTION: () => (
