@@ -47,11 +47,11 @@ export function StarField({
       starsRef.current = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
-        radius: Math.random() * 1.1 + 0.3,
+        radius: Math.random() * 1.3 + 0.4,
         baseOpacity: Math.random() * 0.5 + 0.15,
-        twinkleSpeed: Math.random() * 0.015 + 0.004,
-        driftX: (Math.random() - 0.5) * 0.04,
-        driftY: (Math.random() - 0.5) * 0.04,
+        twinkleSpeed: Math.random() * 0.03 + 0.008,
+        driftX: (Math.random() - 0.5) * 0.18,
+        driftY: (Math.random() - 0.5) * 0.18,
       }));
     }
 
@@ -79,7 +79,7 @@ export function StarField({
         const twinkle =
           !active || prefersReducedMotion
             ? star.baseOpacity
-            : star.baseOpacity + Math.sin(frame * star.twinkleSpeed) * 0.25;
+            : star.baseOpacity + Math.sin(frame * star.twinkleSpeed) * 0.4;
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(242, 243, 243, ${Math.max(0, Math.min(1, twinkle))})`;
