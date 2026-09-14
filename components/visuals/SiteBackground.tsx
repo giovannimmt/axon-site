@@ -21,7 +21,7 @@ export function SiteBackground() {
   return (
     <StarField
       active={heroInView}
-      className="fixed inset-0 z-0 h-screen w-screen"
+      className="pointer-events-none fixed inset-0 z-0 h-screen w-screen"
     />
   );
 }
